@@ -1,5 +1,5 @@
 (use-package tramp
-  :straight (:type built-in)
+  :straight (:type git)
   :config (progn (add-to-list
 	          'tramp-remote-path
 	          'tramp-own-remote-path))
