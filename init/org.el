@@ -6,7 +6,6 @@
    (emacs-lisp . t)
    (python . t)
    (hledger . t)
-   (coq . t)
    (ocaml . t)
    (haskell . t)))
 
