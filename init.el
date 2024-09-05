@@ -16,7 +16,8 @@
  '(package-native-compile t)
  '(scroll-conservatively 101)
  '(smtpmail-default-smtp-server "localhost")
- '(truncate-lines t))
+ '(truncate-lines t)
+ '(enable-remote-dir-locals t))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
