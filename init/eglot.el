@@ -1,4 +1,6 @@
 (use-package eglot
+  :init
+  (setq eglot-workspace-configuration '())
   :bind (:map eglot-mode-map
               ("C-c r"     . eglot-rename)
               ("C-c f"     . eglot-format)
@@ -18,9 +20,9 @@
   :hook
   ((eglot-managed-mode . (lambda ()
                            (setq-local  completion-at-point-functions
-                         `(,(cape-capf-super #'eglot-completion-at-point
-                                             #'cape-dabbrev)
-                           t))))))
+                                        `(,(cape-capf-super #'eglot-completion-at-point
+                                                            #'cape-dabbrev)
+                                          t))))))
 
 (use-package eldoc
   :hook

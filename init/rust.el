@@ -7,7 +7,8 @@
     (customize-set-variable 'flycheck-disabled-checkers
                             (append flycheck-disabled-checkers
                                     '(rust-cargo rust rust-clippy)))
-    (setq-default eglot-workspace-configuration
-                  '( :rust-analyzer
-                     ( :rustc (:source "discover")
-                       :check (:command "clippy"))))))
+    (setq eglot-workspace-configuration
+          (plist-put eglot-workspace-configuration
+                     ':rust-analyzer
+                     '(:rustc (:source "discover")
+                              :check (:command "clippy"))))))
